@@ -1,0 +1,39 @@
+{
+  "name": "barberia-rh-tienda",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "karma start karma.conf.js",
+    "api": "json-server --watch -p 4000 datos_prueba.json",
+    "reiniciar-datos": "node -e \"require('fs').copyFileSync('tests/mocks/datos-iniciales.json','datos_prueba.json')\""
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "next": "16.4.2",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@babel/preset-react": "^7.29.7",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/react": "^16.3.3",
+    "babel-loader": "^10.1.1",
+    "babel-plugin-istanbul": "^8.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.2",
+    "jasmine-core": "^4.6.1",
+    "json-server": "^1.0.0-beta.15",
+    "karma": "^6.4.4",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-coverage": "^2.2.1",
+    "karma-jasmine": "^5.1.0",
+    "karma-webpack": "^5.0.1",
+    "webpack": "^5.112.2"
+  }
+}
