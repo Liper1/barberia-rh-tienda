@@ -1,0 +1,192 @@
+:root {
+  --burdeo: #8a2f2f;
+  --burdeo-oscuro: #6e2424;
+  --dorado: #c8a24a;
+  --negro: #1c1a17;
+  --crema: #f5efe4;
+  --crema-oscuro: #ebe0cc;
+
+  --bs-primary: #8a2f2f;
+  --bs-primary-rgb: 138, 47, 47;
+  --bs-link-color: #8a2f2f;
+  --bs-link-color-rgb: 138, 47, 47;
+  --bs-link-hover-color: #6e2424;
+  --bs-body-font-family: var(--fuente-texto), system-ui, sans-serif;
+  --bs-body-bg: #fbf8f2;
+  --bs-body-color: #1c1a17;
+}
+
+h1, h2, h3, h4, h5, .titulo {
+  font-family: var(--fuente-titulos), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--burdeo);
+  --bs-btn-border-color: var(--burdeo);
+  --bs-btn-hover-bg: var(--burdeo-oscuro);
+  --bs-btn-hover-border-color: var(--burdeo-oscuro);
+  --bs-btn-active-bg: var(--burdeo-oscuro);
+  --bs-btn-disabled-bg: #b07a7a;
+  --bs-btn-disabled-border-color: #b07a7a;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--burdeo);
+  --bs-btn-border-color: var(--burdeo);
+  --bs-btn-hover-bg: var(--burdeo);
+  --bs-btn-hover-border-color: var(--burdeo);
+  --bs-btn-active-bg: var(--burdeo);
+}
+
+.btn-dorado {
+  --bs-btn-bg: var(--dorado);
+  --bs-btn-border-color: var(--dorado);
+  --bs-btn-color: var(--negro);
+  --bs-btn-hover-bg: #b38d37;
+  --bs-btn-hover-border-color: #b38d37;
+  --bs-btn-hover-color: var(--negro);
+}
+
+.barra-tienda {
+  background-color: var(--negro);
+}
+
+.barra-tienda .nav-link,
+.barra-tienda .navbar-brand {
+  color: var(--crema);
+}
+
+.barra-tienda .nav-link:hover,
+.barra-tienda .nav-link.active {
+  color: var(--dorado);
+}
+
+.logo-marca {
+  font-family: var(--fuente-titulos), sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.logo-marca span {
+  color: var(--dorado);
+}
+
+.portada {
+  position: relative;
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.portada::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(28, 26, 23, 0.85) 0%, rgba(28, 26, 23, 0.35) 70%);
+}
+
+.portada .container {
+  position: relative;
+}
+
+.portada h1 {
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1;
+}
+
+.portada h1 span {
+  color: var(--dorado);
+}
+
+.tarjeta-producto img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--crema);
+}
+
+.precio-antes {
+  text-decoration: line-through;
+  color: #8a8478;
+}
+
+.precio-oferta {
+  color: var(--burdeo);
+  font-weight: 700;
+}
+
+.etiqueta-oferta {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+}
+
+.categoria-enlace {
+  display: block;
+  text-decoration: none;
+  color: var(--negro);
+}
+
+.categoria-enlace img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.categoria-enlace:hover img {
+  transform: scale(1.04);
+}
+
+.seccion-oscura {
+  background-color: var(--negro);
+  color: var(--crema);
+}
+
+.pie-pagina {
+  background-color: var(--negro);
+  color: var(--crema-oscuro);
+}
+
+.pie-pagina a {
+  color: var(--crema);
+}
+
+.panel-lateral {
+  background-color: var(--negro);
+}
+
+@media (min-width: 992px) {
+  .panel-lateral {
+    min-height: 100vh;
+  }
+}
+
+.panel-lateral .nav-link {
+  color: var(--crema);
+}
+
+.panel-lateral .nav-link.active,
+.panel-lateral .nav-link:hover {
+  background-color: var(--burdeo);
+  color: #fff;
+}
+
+.resumen-panel {
+  border-left: 4px solid var(--burdeo);
+}
+
+.barra-grafico {
+  height: 1.25rem;
+  background-color: var(--burdeo);
+}
+
+.precio-antes,
+.precio-oferta,
+.barra-tienda .btn {
+  white-space: nowrap;
+}
