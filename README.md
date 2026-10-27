@@ -2,6 +2,7 @@
 
 Proyecto de la Evaluación Parcial 2 de **DSY1104 Desarrollo Fullstack II** (Duoc UC).
 Alumno: Felipe Riquelme Montt.
+Repositorio: https://github.com/Liper1/barberia-rh-tienda
 
 Tienda online de la Barbería R&H hecha con **Next.js 16 (React 19)** y **Bootstrap 5.3**,
 con un panel de administración y pruebas unitarias con **Jasmine + Karma**.
