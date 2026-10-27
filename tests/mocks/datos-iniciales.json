@@ -1,0 +1,237 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "codigo": "SER-001",
+      "nombre": "Corte de cabello",
+      "categoria": "Cortes",
+      "descripcion": "Corte clásico con máquina y tijera, lavado y peinado.",
+      "duracion": 30,
+      "precio": 5000,
+      "precioOferta": null,
+      "stock": 40,
+      "stockCritico": 8,
+      "imagen": "/img/servicios/corte.jpg"
+    },
+    {
+      "id": "2",
+      "codigo": "SER-002",
+      "nombre": "Corte degradado",
+      "categoria": "Cortes",
+      "descripcion": "Degradado (fade) a máquina con terminación a navaja.",
+      "duracion": 45,
+      "precio": 7000,
+      "precioOferta": null,
+      "stock": 30,
+      "stockCritico": 6,
+      "imagen": "/img/servicios/degradado.jpg"
+    },
+    {
+      "id": "3",
+      "codigo": "SER-003",
+      "nombre": "Corte + barba",
+      "categoria": "Cortes",
+      "descripcion": "Corte de cabello y arreglo de barba en la misma sesión.",
+      "duracion": 60,
+      "precio": 10000,
+      "precioOferta": 8990,
+      "stock": 20,
+      "stockCritico": 5,
+      "imagen": "/img/servicios/corte-barba.jpg"
+    },
+    {
+      "id": "4",
+      "codigo": "SER-004",
+      "nombre": "Arreglo de barba",
+      "categoria": "Barba",
+      "descripcion": "Recorte y forma de la barba con máquina y tijera.",
+      "duracion": 20,
+      "precio": 4500,
+      "precioOferta": null,
+      "stock": 35,
+      "stockCritico": 8,
+      "imagen": "/img/servicios/arreglo-barba.jpg"
+    },
+    {
+      "id": "5",
+      "codigo": "SER-005",
+      "nombre": "Afeitado clásico",
+      "categoria": "Barba",
+      "descripcion": "Afeitado a navaja con toalla caliente y bálsamo.",
+      "duracion": 30,
+      "precio": 6000,
+      "precioOferta": 5000,
+      "stock": 4,
+      "stockCritico": 5,
+      "imagen": "/img/servicios/afeitado.jpg"
+    },
+    {
+      "id": "6",
+      "codigo": "SER-006",
+      "nombre": "Perfilado con navaja",
+      "categoria": "Barba",
+      "descripcion": "Líneas de la barba y el cuello marcadas a navaja.",
+      "duracion": 25,
+      "precio": 5500,
+      "precioOferta": null,
+      "stock": 25,
+      "stockCritico": 5,
+      "imagen": "/img/servicios/perfilado.jpg"
+    },
+    {
+      "id": "7",
+      "codigo": "SER-007",
+      "nombre": "Toalla caliente y limpieza facial",
+      "categoria": "Tratamientos",
+      "descripcion": "Limpieza de la piel con toalla caliente, exfoliante y crema hidratante.",
+      "duracion": 30,
+      "precio": 8000,
+      "precioOferta": null,
+      "stock": 0,
+      "stockCritico": 3,
+      "imagen": "/img/servicios/toalla-caliente.jpg"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "nombre": "Cortes",
+      "descripcion": "Cortes de cabello clásicos y degradados, con lavado y peinado.",
+      "imagen": "/img/servicios/degradado.jpg"
+    },
+    {
+      "id": "2",
+      "nombre": "Barba",
+      "descripcion": "Arreglo, perfilado y afeitado clásico a navaja.",
+      "imagen": "/img/servicios/arreglo-barba.jpg"
+    },
+    {
+      "id": "3",
+      "nombre": "Tratamientos",
+      "descripcion": "Toalla caliente y limpieza facial para después del corte.",
+      "imagen": "/img/servicios/toalla-caliente.jpg"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "run": "1901102K",
+      "nombre": "Felipe",
+      "apellidos": "Riquelme Montt",
+      "correo": "admin@duoc.cl",
+      "clave": "admin123",
+      "tipo": "Administrador",
+      "fechaNacimiento": "2000-05-10",
+      "region": "Región Metropolitana",
+      "comuna": "Santiago",
+      "direccion": "Av. Libertador 1234"
+    },
+    {
+      "id": "2",
+      "run": "123456785",
+      "nombre": "Camila",
+      "apellidos": "Soto Pérez",
+      "correo": "vendedor@duoc.cl",
+      "clave": "vende123",
+      "tipo": "Vendedor",
+      "fechaNacimiento": "1998-02-20",
+      "region": "Región Metropolitana",
+      "comuna": "Providencia",
+      "direccion": "Los Leones 450"
+    },
+    {
+      "id": "3",
+      "run": "111111111",
+      "nombre": "Matías",
+      "apellidos": "González Rojas",
+      "correo": "cliente@gmail.com",
+      "clave": "cliente1",
+      "tipo": "Cliente",
+      "fechaNacimiento": "2001-11-03",
+      "region": "Valparaíso",
+      "comuna": "Viña del Mar",
+      "direccion": "Calle 5 Norte 220"
+    },
+    {
+      "id": "4",
+      "run": "177777773",
+      "nombre": "Javiera",
+      "apellidos": "Muñoz Díaz",
+      "correo": "javiera@gmail.com",
+      "clave": "javi1234",
+      "tipo": "Cliente",
+      "fechaNacimiento": "1995-07-15",
+      "region": "Biobío",
+      "comuna": "Concepción",
+      "direccion": "Barros Arana 900"
+    }
+  ],
+  "ordenes": [
+    {
+      "id": "10001",
+      "numero": 10001,
+      "fecha": "2026-10-20",
+      "usuarioId": "3",
+      "estado": "Atendida",
+      "cliente": {
+        "nombre": "Matías",
+        "apellidos": "González Rojas",
+        "correo": "cliente@gmail.com",
+        "region": "Valparaíso",
+        "comuna": "Viña del Mar",
+        "calle": "Calle 5 Norte 220",
+        "departamento": "",
+        "indicaciones": ""
+      },
+      "items": [
+        {
+          "productoId": "2",
+          "nombre": "Corte degradado",
+          "precio": 7000,
+          "cantidad": 1
+        },
+        {
+          "productoId": "4",
+          "nombre": "Arreglo de barba",
+          "precio": 4500,
+          "cantidad": 1
+        }
+      ],
+      "total": 11500
+    },
+    {
+      "id": "10002",
+      "numero": 10002,
+      "fecha": "2026-10-23",
+      "usuarioId": "4",
+      "estado": "Pagada",
+      "cliente": {
+        "nombre": "Javiera",
+        "apellidos": "Muñoz Díaz",
+        "correo": "javiera@gmail.com",
+        "region": "Biobío",
+        "comuna": "Concepción",
+        "calle": "Barros Arana 900",
+        "departamento": "Depto 41",
+        "indicaciones": "Prefiere atención con Felipe"
+      },
+      "items": [
+        {
+          "productoId": "3",
+          "nombre": "Corte + barba",
+          "precio": 8990,
+          "cantidad": 2
+        },
+        {
+          "productoId": "7",
+          "nombre": "Toalla caliente y limpieza facial",
+          "precio": 8000,
+          "cantidad": 1
+        }
+      ],
+      "total": 25980
+    }
+  ],
+  "carrito": [],
+  "sesion": {}
+}
